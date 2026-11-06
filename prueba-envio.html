@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Prueba de FormSubmit</title>
+
+    <style>
+        body {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #b88a3a;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prueba de envío</h1>
+
+    <form
+        action="https://formsubmit.co/crisarsola86@gmail.com"
+        method="POST"
+    >
+        <input
+            type="text"
+            name="cliente"
+            value="PRUEBA SIN ARCHIVOS"
+            required
+        >
+
+        <textarea
+            name="mensaje"
+            required
+        >Comprobación de funcionamiento de FormSubmit</textarea>
+
+        <input
+            type="hidden"
+            name="_subject"
+            value="PRUEBA SIN ARCHIVOS"
+        >
+
+        <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+        >
+
+        <input
+            type="hidden"
+            name="_next"
+            value="https://csd343279-bot.github.io/Remodelaci-nes-Arzola1/gracias.html"
+        >
+
+        <button type="submit">
+            Probar FormSubmit
+        </button>
+    </form>
+</body>
+</html>
